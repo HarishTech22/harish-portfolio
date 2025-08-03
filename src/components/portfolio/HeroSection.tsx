@@ -17,7 +17,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-card-gradient p-2 shadow-card">
                 <img 
-                  src="/lovable-uploads/f55a5e33-772d-412c-a438-19a843ca7d61.png"
+                  src="/lovable-uploads/350f851b-e3c3-4df8-a5b6-c21562d58697.png"
                   alt="Harish Shanmugam"
                   className="w-full h-full rounded-full object-cover border-4 border-primary/20"
                 />
@@ -70,13 +70,23 @@ const HeroSection = () => {
                 <Mail className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
                 Get In Touch
               </Button>
-              <Button variant="outline" size="lg" className="group border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="group border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                onClick={() => window.open('https://smarthospitalmanagementsystem.netlify.app/', '_blank')}
+              >
                 <Github className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 View Projects
               </Button>
-              <Button variant="ghost" size="lg" className="group text-primary hover:bg-primary/10">
-                <Linkedin className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                LinkedIn
+              <Button 
+                variant="ghost" 
+                size="lg" 
+                className="group text-primary hover:bg-primary/10"
+                onClick={() => window.open('https://github.com/HarishTech22', '_blank')}
+              >
+                <Github className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                GitHub
               </Button>
             </div>
           </div>
